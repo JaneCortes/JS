@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+      <!-- header -->
+      <div class="cabecero">
+        <div class = "presupuesto">
+        <div class ="presupuesto_titulo">
+           <p> Presupuesto Disponible </p>
+        </div>       
+        <!-- part 1 -->
+        <div class ="presupuesto_valor">
+            <p>+2,000.00</p>
+        </div>
+    
+
+        <!-- part 2 -->
+        <div class = "presupuesto_ingreso limpiarEstilos">
+   
+            <div class ="presupuesto_ingreso--texto">
+                <p>Ingresos</p>
+            </div>
+            <div class="derecha">
+                <div class=" presupuesto_ingreso—valor">
+                   <p>+4,000.00.</p>
+                </div>
+
+                <div class="presupuesto_ingreso--porcentaje ">
+                    <p> </p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- part 3 -->
+        <div class="presupuesto_egreso limpiarEstilos">
+            <div class =" presupuesto_egreso--texto">
+                <p>Egresos</p>
+            </div>
+            <div class="derecha limpiarEstilos">
+                <div class="e presupuesto_egreso--valor">
+                    <p>-1,900.00</p>
+                </div>
+                <div class="presupuesto_egreso—porcentaje.">
+                    <p>45%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <form id="forma"></form>
+        <div class="agregar">
+            <div class="agregar_contenedor">
+
+                <select class="agregar_tipo" id="tipo">
+                    <option value="ingreso">+</option>
+                    <option value="egreso">-</option>
+                </select>
+                <input type="text" class="agregar_descripcion" id="descripcion" value="Agregar Descripcion">
+                <input type="number" class=" agregar_valor" value="valor step any">
+                <!--<input type="text"> decia 3 pero este no se ve  -->
+                <button class="agregar_btn">
+                    <ion-icon name='checkmark-circle-outline'></ion-icon>
+                </button>
+            </div>
+        </div>
+
+
+
+         <!--contenedor-->
+         <div class="Contenedor limpiarEstilos">
+            
+            <div class="ingreso">
+               <h2 class="ingreso_titulo "> Ingresos</h2>
+               <div id="lista-ingresos">
+                <div class="elemento limpiarEstilos">
+                    <div class="clase elemento_descripcion"><p>salario</p></div>
+
+                    <div class="derecha limpiarEstilos">
+                        <div class="elemento_valor">+2,200.00</div>
+
+                        <div class="elemento_eliminar">
+                            <button class="elemento_eliminar_btn">
+                                <ion-icon name="close-circle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </div>
+
+            <div class="egreso"></div>
+         </div>
+    </header>
+    <script type="module" src="
+    https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
